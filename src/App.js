@@ -20,6 +20,11 @@ class App extends Component {
     // step 1:- store: reducer and state
     const store = createStore(reducer, "Peace");
 
+    //step 3: Subscriber
+    store.subscribe(() => {
+      console.log("State is now", store.getState());
+    })
+
     return (
       <div className="App">
         <header className="App-header">
