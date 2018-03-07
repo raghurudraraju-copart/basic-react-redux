@@ -6,6 +6,17 @@ import { createStore } from 'redux';
 class App extends Component {
   render() {
 
+  //step 2:- reducer: state and action
+  const reducer = function(state, action) {
+    if(action.type==="ATTACK") {
+      return action.data;
+    }
+    if(action.type==="GREENATTACK") {
+      return action.data;
+    }
+    return state;
+  }
+
     // step 1:- store: reducer and state
     const store = createStore(reducer, "Peace");
 
