@@ -7,8 +7,7 @@ class App extends Component {
   render() {
 
     // step 1:- store: reducer and state
-    //const store = createStore(reducer, "Peace");
-
+    const store = createStore(reducer, "Peace");
 
     return (
       <div className="App">
