@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { createStore } from 'redux';
 
 class App extends Component {
   render() {
+
+    // step 1:- store: reducer and state
+    //const store = createStore(reducer, "Peace");
+
+
     return (
       <div className="App">
         <header className="App-header">
