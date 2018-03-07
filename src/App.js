@@ -25,6 +25,11 @@ class App extends Component {
       console.log("State is now", store.getState());
     })
 
+    //step 4: Action/Dispacher
+
+    store.dispatch({type: "ATTACK", data: "Attacking .."});
+    store.dispatch({type: "GREENATTACK", data: "Green Attacking .."});
+
     return (
       <div className="App">
         <header className="App-header">
